@@ -46,10 +46,11 @@ addTamaButton.addEventListener("click", (event) => {
   statsForHungryness.innerHTML = `Hungryness : ${currentHungryness}`;
 
   let feedButton = document.createElement("button");
+  feedButton.setAttribute("id", "feedButton");
   feedButton.innerText = `Feed`;
 
   let happinessButton = document.createElement("button");
-  feedButton.style.margin = "20px";
+  happinessButton.setAttribute("id", "happinessButton");
   happinessButton.innerText = `Play`;
 
   const interactWithTama = (stat) => {
